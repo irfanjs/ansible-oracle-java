@@ -13,6 +13,7 @@ Vagrant.configure(2) do |config|
             ansible.playbook = "test.yml"
             #ansible.playbook = "prefetch.yml"
             ansible.sudo = true
+            ansible.ask_vault_pass = true
             #ansible.verbose = "vvv"
         end
     end
